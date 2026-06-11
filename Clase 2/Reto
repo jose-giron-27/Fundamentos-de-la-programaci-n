@@ -1,0 +1,17 @@
+print("El usuario entra a la entrada de la oficina...") ## Se da lore
+print("El usuario debe responder los siguientes requerimientos") ## Se da lore
+nombre = input("¿Cual es tu nombre: ") ## Nombre del usuario
+edad = int(input("¿Cual es tu edad?: ")) ## Edad del usuario
+admin = int(input("Ingrese el código de administrador, sin no tiene escriba 0: ")) ## Si es admin escribe 1 y sino debe poner 0
+password = 0 ## Se establece que password vale 0 
+
+if admin != 1: ## Se dice que esto funciona si admin es diferente de 1
+        password = int(input("Escriba la contraseña: ")) ## Se solicita la contraseña 
+ 
+puede_entrar = (edad>= 18 and password == 1234) or admin == 1 ## Se registra la condicion para que sea true
+print("Hola: ", nombre, "¿Puede entrar? ", puede_entrar) ## Se indica al usuario si puede
+
+
+
+
+
